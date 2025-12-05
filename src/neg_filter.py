@@ -79,7 +79,7 @@ def _llm_filter(label_pairs, seed=0, device="cuda:0", log_file="llm_process.txt"
     set_seed(seed)
 
     model = AutoModelForCausalLM.from_pretrained(
-    "Qwen/Qwen2.5-1.8B-Chat",
+    "Qwen/Qwen2.5-0.5B-Instruct",
     torch_dtype="auto",
     device_map="auto"
     )
